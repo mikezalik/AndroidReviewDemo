@@ -3,8 +3,14 @@ package android.example.androidreviewdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    public void clickFunction (View view)   {
+        Log.i("info", "You've pressed the button!");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
