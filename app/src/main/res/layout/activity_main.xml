@@ -21,15 +21,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="275dp"
         android:layout_marginEnd="161dp"
         android:layout_marginBottom="33dp"
         android:onClick="clickFunction"
-        android:text="Click me!"
+        android:text="Log in"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
 
     <EditText
         android:id="@+id/nameEditText"
@@ -38,8 +38,20 @@
         android:layout_marginStart="195dp"
         android:layout_marginTop="230dp"
         android:layout_marginEnd="195dp"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        android:hint="First and Last Name?"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password?"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="185dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
