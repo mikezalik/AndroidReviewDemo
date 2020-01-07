@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AndroidReviewDemo</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="Login">Login</string>
 </resources>
